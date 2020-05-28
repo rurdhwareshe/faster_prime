@@ -1,16 +1,16 @@
 clc
 clear all;
-x=input('Enter the number upto which you want to have prime numbers');
+x=input('Please the number upto which you want to have prime numbers:');
 i=3;
 flag=0;
 prime(1)=2;
 k=2;
 tic
 while i<=x
-    half=sqrt(i);
+    sqrt_i=sqrt(i);
     j=1;
     for j=2:1:length(prime)
-        if j>=half
+        if j>=sqrt_i
             break;
         else
         if(mod(i,prime(j))==0)
